@@ -1,0 +1,165 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(255, 221, 158);
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 80px 1fr 40px;
+  box-shadow:
+    10px 10px 20px,
+    -10px 10px 20px;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.l {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.l i {
+  font-size: 35px;
+}
+.r {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.r a {
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 58, 58);
+  height: 40px;
+  width: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.r a:hover {
+  color: black;
+  font-size: 16.5px;
+}
+#butao {
+  background-color: rgb(255, 68, 0);
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+.inicial {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(252, 243, 236, 0.842);
+  display: grid;
+  grid-template-areas:
+    "titulo titulo aside"
+    "titulo titulo aside"
+    "botao botao aside";
+  grid-template-columns: 1fr 1fr 30%;
+  grid-template-rows: 1fr 1fr 25%;
+  padding: 20px;
+}
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: aside;
+}
+.img {
+  height: 90%;
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.botao {
+  grid-area: botao;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.botao button {
+  background-color: rgb(253, 226, 175);
+  border: 1px solid black;
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+}
+.botao button:hover {
+  background-color: rgb(249, 213, 144);
+  height: 42px;
+  width: 132px;
+}
+
+.skill {
+  height: 40%;
+  width: 100%;
+}
+.card {
+  background-color: rgb(186, 186, 186);
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 210px;
+}
+.card2 {
+  height: 270px;
+  width: 260px;
+  border-radius: 10px;
+  background-color: rgb(186, 186, 186);
+}
+.projetos {
+  height: 340px;
+  width: 100%;
+}
+.cr {
+  height: 82%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
