@@ -1,1 +1,1 @@
-# landingpage pessoal feita com HTML CSS
+# landingpage pessoal feita com HTML CSS com media queries
